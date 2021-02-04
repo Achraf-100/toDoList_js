@@ -44,3 +44,42 @@ export let creationDiv = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, i
 
 }
 
+export let creationIconeEdit = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, iconEdit, iconCheck, iconSuppr, myInputCreation) => {
+
+    let mot = nouvelleTache.textContent
+
+    nouvelleTache.textContent = ''
+    input2Modif = document.createElement('input')
+    nouvelleTache.appendChild(input2Modif)
+
+    
+
+    stock = document.createElement('div')
+    nouvelleTache.appendChild(stock)
+    iconYes = document.createElement('i');
+    iconYes.className = "fa fa-check-circle"
+    iconAnn = document.createElement('i');
+    iconAnn.className = 'fa fa-window-close'
+    stock.appendChild(iconYes)
+    stock.appendChild(iconAnn)
+
+
+    iconYes.addEventListener('click', () => {
+        if (input2Modif.value == "") {
+            alert('Remplissez le champs !');
+        } else {
+            nouvelleTache.textContent = ''
+            nouvelleTache.textContent = input2Modif.value
+            creationDiv(stock, nouvelleTache, iconEdit, iconCheck, iconSuppr)
+            mot = input2Modif.value
+        }
+    })
+    iconAnn.addEventListener('click', () => {
+        nouvelleTache.textContent = ''
+        nouvelleTache.textContent = mot
+        creationDiv(stock, nouvelleTache, iconEdit, iconCheck, iconSuppr)
+    })
+}
+
+
+
