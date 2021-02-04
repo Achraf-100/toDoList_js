@@ -1,0 +1,23 @@
+{
+  "name": "toDoList_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achraf-100/toDoList_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Achraf-100/toDoList_js/issues"
+  },
+  "homepage": "https://github.com/Achraf-100/toDoList_js#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
+}

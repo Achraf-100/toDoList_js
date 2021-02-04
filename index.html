@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDolist</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="./public/img/bg.mp4 (2).mp4" type="video/mp4">
+        </video>
+
+    <header>
+        <h1>
+            ToDolist
+        </h1>
+    </header>
+
+    <section>
+        <h2>Ajouter une tâche:</h2>
+
+        <div>
+            <input style="outline:none" type="text" size="20">
+            <input style="border: none; outline:none" type="button" value="Envoyer" id="Ajout">
+        </div>
+
+        <div id="filtre">
+            <button style="border: none; outline:none"> A faire </button>
+            <button style="border: none; outline:none"> Terminer </button>
+            <button style="border: none; outline:none"> Toutes les taches </button>
+        </div>
+
+    </section>
+    </div>
+
+
+    <script type="module" src="./public/js/main.js"></script>
+</body>
+
+</html>
