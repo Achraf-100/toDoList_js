@@ -1,4 +1,5 @@
 export let creationDiv = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, iconEdit, iconCheck, iconSuppr, myInputCreation) => {
+
     stock = document.createElement('div')
     nouvelleTache.appendChild(stock)
 
@@ -44,7 +45,7 @@ export let creationDiv = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, i
 
 }
 
-export let creationIconeEdit = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, iconEdit, iconCheck, iconSuppr, myInputCreation) => {
+export let creationIconeEdit = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, iconEdit, iconCheck, iconSuppr) => {
 
     let mot = nouvelleTache.textContent
 

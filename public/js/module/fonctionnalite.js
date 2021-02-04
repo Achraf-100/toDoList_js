@@ -24,7 +24,7 @@ let myTerminer = document.querySelectorAll('#filtre button')[1]
 let myTout = document.querySelectorAll('#filtre button')[2]
 
 myInputCreation.addEventListener('keypress', (e) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode == 13) {
         if (myInputCreation.value == "") {
             alert('Remplissez le champs !');
 
@@ -38,8 +38,6 @@ myInputCreation.addEventListener('keypress', (e) => {
             myDivAvecLesTaches.style = 'padding-bottom: 10px;padding-top: 10px;'
 
             creationDiv(stock, nouvelleTache, iconEdit, iconCheck, iconSuppr)
-
-
         }
     }
 })
