@@ -17,7 +17,30 @@ export let creationDiv = (stock, nouvelleTache, iconYes, iconAnn, input2Modif, i
     stock.appendChild(iconSuppr)
 
     nouvelleTache.classList.add('pasFini')
-git 
+
+    iconCheck.addEventListener('click', () => {
+        if (a % 2 == 0) {
+            nouvelleTache.classList.add('fini')
+            nouvelleTache.classList.remove('pasFini')
+            a++
+        } else {
+            nouvelleTache.classList.remove('fini')
+            nouvelleTache.classList.add('pasFini')
+            a++
+        }
+    })
+
+    iconEdit.addEventListener('click', () => {
+        creationIconeEdit(stock, nouvelleTache, iconYes, iconAnn, input2Modif, iconEdit, iconCheck, iconSuppr, myInputCreation)
+    })
+
+    iconSuppr.addEventListener('click',()=>{
+        if(confirm('Voulez-vous vraiment supprimer cette tache ?')){
+            nouvelleTache.remove()
+        }
+    })
 
 
+
+}
 

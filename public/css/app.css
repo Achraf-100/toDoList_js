@@ -88,7 +88,11 @@ button{
     padding: 0;
     margin: 0;
 }
-
+i{
+    color: white;
+    padding: 0px 15px;
+    text-align: right;
+}
 #filtre button{
     height: 40px;
     max-width: max-content;
